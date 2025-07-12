@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katz Cookin’ | Private Chef Services by Spencer Katz</title>
+  <style>
+    :root {
+      --background-dark: #1b1a17;
+      --text-light: #f3f0ec;
+      --accent: #ba5a3b;
+      --accent-hover: #9e4329;
+      --serif: 'Georgia', serif;
+      --sans: 'Inter', sans-serif;
+    }body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--text-light);
+  background-color: var(--background-dark);
+  line-height: 1.6;
+}
+
+nav {
+  background-color: rgba(27, 26, 23, 0.95);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background: url('https://btpd21.github.io/Katzcookin-site/Food_Photos/E5F0F876-3B65-48C8-9AF9-73C52799CDE4.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: var(--serif);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  font-family: var(--serif);
+  margin-bottom: 1rem;
+}
+
+p, li, input, textarea {
+  font-size: 1.1rem;
+  font-family: var(--sans);
+  color: var(--text-light);
+}
+
+.buttons a {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+  background-color: var(--accent-hover);
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+.testimonial {
+  background-color: #2a2724;
+  border-left: 4px solid var(--accent);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  background: #2f2c29;
+  border: 1px solid #444;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--sans);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong style="font-family: var(--serif); color: var(--text-light);">Katz Cookin’</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>  <header>
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Private Chef Services by Spencer Katz</h1>
+      <p>Certified Chef de Cuisine offering globally inspired, technique-driven meals tailored to your taste, style, and dietary needs.</p>
+      <div class="buttons">
+        <a href="#gallery">View Dishes</a>
+        <a href="#contact">Book a Consultation</a>
+      </div>
+    </div>
+  </header>  <section class="about" id="about">
+    <h2>About Spencer</h2>
+    <p>With a foundation in fine dining and a certification as Chef de Cuisine, Spencer Katz combines technical excellence with extraordinary versatility. Drawing from over a decade of experience preparing pescatarian, vegan, vegetarian, dairy-free, and histamine-sensitive dishes, he specializes in creating meals that are thoughtful, refined, and deeply personal. Whether it’s aging and curing meats or crafting globally inspired plant-based plates, Spencer brings warmth, professionalism, and precision to every bite.</p>
+  </section>  <section class="services" id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Private dinners and tasting menus</li>
+      <li>Event and retreat catering</li>
+      <li>Personalized weekly meal prep</li>
+      <li>Late-night and pop-up menu creation</li>
+      <li>Custom dietary accommodation (pescatarian, vegan, dairy-free, etc.)</li>
+      <li>Smoking, curing, and aged meat presentations</li>
+    </ul>
+  </section>  <section class="gallery" id="gallery">
+    <h2>Featured Dishes</h2>
+    <div class="gallery-grid">
+      <img src="https://btpd21.github.io/Katzcookin-site/Food_Photos/E5F0F876-3B65-48C8-9AF9-73C52799CDE4.jpg" alt="Malai Kofta Pizza">
+      <img src="https://btpd21.github.io/Katzcookin-site/Food_Photos/Smoked_Chicken_and_Tofu.jpg" alt="Smoked Chicken and Tofu">
+      <img src="https://btpd21.github.io/Katzcookin-site/Food_Photos/IMG_0854.jpeg" alt="Smoked Chocolate Chip Cookies">
+      <img src="https://btpd21.github.io/Katzcookin-site/Food_Photos/Coconut_Shrimp.jpg" alt="Coconut Shrimp">
+      <img src="https://btpd21.github.io/Katzcookin-site/Food_Photos/Mushroom_Eggplant_Miso_Trio.jpg" alt="Trio of Eggplant, Mushroom, and Miso">
+    </div>
+  </section>  <section class="testimonials" id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <p>“Spencer prepared a five-course vegan tasting menu for our anniversary and every bite was unforgettable. His attention to detail is unmatched.” – Rachel M.</p>
+    </div>
+    <div class="testimonial">
+      <p>“I hired Spencer for a private dinner party, and it felt like dining in a Michelin-starred restaurant from the comfort of my home.” – David T.</p>
+    </div>
+    <div class="testimonial">
+      <p>“Every dish was perfectly tailored to our dietary restrictions without sacrificing flavor or presentation. Highly recommend!” – Jenna L.</p>
+    </div>
+  </section>  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="event" placeholder="Event Type / Date">
+      <textarea name="message" rows="5" placeholder="Tell me what you're looking for..."></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+</body>
+</html>
